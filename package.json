@@ -51,6 +51,7 @@
     "webpack": "^1.13.3",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.6.0",
+    "localtunnel": "1.8.2",
     "yargs": "^3.9.0"
   },
   "scripts": {
@@ -60,7 +61,8 @@
     "start": "gulp serve",
     "test": "karma start",
     "watch": "gulp serve",
-    "webpack": "gulp webpack"
+    "webpack": "gulp webpack",
+    "share": "lt --port 3000 --subdomain radixdev"
   },
   "keywords": [
     "angular",
