@@ -5,9 +5,6 @@ $darkBgColor:    #263238;
 $lightBgColor:   #37474f;
 $lightTextColor: #f5f5f5;
 $darkTextColor:  #212121;
-$roxoRadix:      #5b336e;
-$verdeRadix:     #b4d342;
-
 
 //Cores Bases Utilizdas nos clientes Radix
 
@@ -34,16 +31,11 @@ $verdeRadix:     #b4d342;
     //Csn
     $azulCsn:#1366b1;
     $cinzaCsn: #4d4d4d;
-    
-
-
-
-
 
 
 body {
    height: 100%;
-   
+
    // browsers default to 16px for font-size,
    // so setting top-level font-size to 62.5%
    // scales 1rem to equal 10px.

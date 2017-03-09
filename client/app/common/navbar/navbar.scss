@@ -4,6 +4,20 @@ md-nav-bar md-nav-ink-bar {
   background: $roxoRadix;
 }
 
+
 .md-button.md-default-theme.md-accent, .md-button.md-accent {
     color: $verdeRadix;
+}
+
+.nav-header {
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+
+.docs-logo  img {
+    height: 70px;
+    width: auto;
+    display: block;
 }
