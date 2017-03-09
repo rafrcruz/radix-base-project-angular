@@ -6,8 +6,41 @@ $lightBgColor:   #37474f;
 $lightTextColor: #f5f5f5;
 $darkTextColor:  #212121;
 
+//Cores Bases Utilizdas nos clientes Radix
+
+    //VALE-DIFL
+    $verdeVale: #007E7A;
+    $amareloVale: #ecb833;
+
+    //Radix
+    $roxoRadix:#5b336e;
+    $verdeRadix:#b4d342;
+
+    //AcelorMittal
+    $vermelhoAcelor: #ff3600;
+    $cinzaAcelor: #878787;
+
+    //VSB
+    $azulVSB: #0070b8;
+    $amareloVSB: #f9b900;
+
+    //SunCoke
+    $cinzaSunCoke: #31302d;
+    $laranjaSunCoke: #f25a13;
+
+    //Csn
+    $azulCsn:#1366b1;
+    $cinzaCsn: #4d4d4d;
+    
+
+
+
+
+
+
 body {
    height: 100%;
+   
    // browsers default to 16px for font-size,
    // so setting top-level font-size to 62.5%
    // scales 1rem to equal 10px.
