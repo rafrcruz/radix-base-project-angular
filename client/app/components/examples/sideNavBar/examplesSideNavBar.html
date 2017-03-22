@@ -1,17 +1,14 @@
-    <md-sidenav class="md-sidenav-left" md-component-id="left"
-                md-disable-backdrop md-whiteframe="4">
+<md-sidenav class="md-sidenav-left actions examplesSideNavBar" layout="column" md-component-id="left" md-disable-backdrop md-whiteframe="4">
+  <md-toolbar class="md-theme-indigo">
+    <h1 class="md-toolbar-tools">Exemplos</h1>
+  </md-toolbar>
 
-      <md-toolbar class="md-theme-indigo">
-        <h1 class="md-toolbar-tools">Disabled Backdrop</h1>
-      </md-toolbar>
-
-      <md-content layout-margin>
-        <p>
-          This sidenav is not showing any backdrop, where users can click on it, to close the sidenav.
-        </p>
-        <md-button ng-click="$ctrl.toggleLeft()" class="md-accent">
-          Close this Sidenav
-        </md-button>
-      </md-content>
-
-    </md-sidenav>
+  <md-content layout-margin>
+    <p>
+      This sidenav is not showing any backdrop, where users can click on it, to close the sidenav.
+    </p>
+    <md-button ng-click="$ctrl.toggleLeft()" class="md-accent">
+      Close this Sidenav
+    </md-button>
+  </md-content>
+</md-sidenav>

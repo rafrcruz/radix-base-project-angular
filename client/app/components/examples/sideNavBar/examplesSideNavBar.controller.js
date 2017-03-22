@@ -1,7 +1,10 @@
 class ExamplesSideNavBarController {
   constructor($timeout, $mdSidenav) {
     'ngInject';
-    this.toggleLeft =  function () { $mdSidenav('left').toggle(); };
+    this.toggleLeft = function () { $mdSidenav('left').toggle(); };
+    $timeout(function () {
+       $mdSidenav('left').toggle();
+    });
     console.log(this.toggleLeft);
   }
 }
