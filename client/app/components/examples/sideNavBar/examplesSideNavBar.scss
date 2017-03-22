@@ -1,2 +1,10 @@
-.examplesSideNavBar {
+@import "./../../../common/common";
+
+.md-toolbar-tools {
+  background-color: $verdeRadix;
+  color: $roxoRadix;
+}
+
+.sidenav-link {
+    text-align: left !important;
 }
