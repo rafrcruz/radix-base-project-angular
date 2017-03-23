@@ -4,7 +4,8 @@ import './navbar.scss';
 
 let navbarComponent = {
   restrict: 'E',
-  bindings: {},
+  transclude: true,
+  bindings: { title: '@', logo: '@' },
   template,
   controller
 };

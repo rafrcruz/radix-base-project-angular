@@ -3,8 +3,11 @@
 </md-button>
 <md-sidenav class="md-sidenav-left actions examplesSideNavBar" layout="column" md-component-id="left" md-disable-backdrop
   md-whiteframe="4">
-  <md-toolbar class="md-theme-indigo">
+  <md-toolbar class="md-theme-indigo" layout="row">
     <h1 class="md-toolbar-tools">Exemplos</h1>
+    <md-button class="md-toolbar-icons" ng-click="$ctrl.toggleLeft()">
+      <md-icon>arrow_back</md-icon>
+    </md-button>
   </md-toolbar>
 
   <md-content layout-margin>
@@ -17,9 +20,5 @@
         <md-button class="sidenav-link"><a ui-sref="examples.dialogs">dialogs</a></md-button>
       </md-list-item>
     </md-list>
-
-    <md-button ng-click="$ctrl.toggleLeft()" class="md-accent">
-      FECHAR
-    </md-button>
   </md-content>
 </md-sidenav>
