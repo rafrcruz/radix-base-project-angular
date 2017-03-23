@@ -1,8 +1,8 @@
 @import "./../../../common/common";
 
-.md-toolbar-tools {
-  background-color: $verdeRadix;
-  color: $roxoRadix;
+.md-toolbar-tools, .md-toolbar-, md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar) {
+  background-color: $verdeRadix !important;
+  color: $roxoRadix !important;
 }
 
 .sidenav-link {
