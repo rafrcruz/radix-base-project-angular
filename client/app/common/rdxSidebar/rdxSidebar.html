@@ -1,0 +1,14 @@
+<md-button aria-label="menu" ng-click="$ctrl.toggleLeft()" class="md-fab md-primary">
+  <md-icon>menu</md-icon>
+</md-button>
+<md-sidenav class="md-sidenav-left actions" layout="column" md-component-id="left" md-disable-backdrop md-whiteframe="4">
+  <md-toolbar class="md-theme-indigo" layout="row">
+    <h1 class="md-toolbar-tools">{{$ctrl.title}}</h1>
+    <md-button class="md-toolbar-icons" ng-click="$ctrl.toggleLeft()">
+      <md-icon>arrow_back</md-icon>
+    </md-button>
+  </md-toolbar>
+  <md-content layout-margin>
+    <ng-transclude> </ng-transclude>
+  </md-content>
+</md-sidenav>
