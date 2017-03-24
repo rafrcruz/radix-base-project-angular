@@ -1,9 +1,9 @@
-import NavbarModule from './navbar'
+import RdxHeaderModule from './rdxHeader'
 
-describe('Navbar', () => {
+describe('RdxHeader', () => {
   let $rootScope, $state, $location, $componentController, $compile;
 
-  beforeEach(window.module(NavbarModule));
+  beforeEach(window.module(RdxHeaderModule));
 
   beforeEach(inject(($injector) => {
     $rootScope = $injector.get('$rootScope');
@@ -21,7 +21,7 @@ describe('Navbar', () => {
     // controller specs
     let controller;
     beforeEach(() => {
-      controller = $componentController('navbar', {
+      controller = $componentController('rdxHeader', {
         $scope: $rootScope.$new()
       });
     });
@@ -37,12 +37,12 @@ describe('Navbar', () => {
 
     beforeEach(() => {
       scope = $rootScope.$new();
-      template = $compile('<navbar></navbar>')(scope);
+      template = $compile('<rdx-header></rdx-header>')(scope);
       scope.$apply();
     });
 
     it('has name in template', () => {
-      expect(template.find('h1').find('a').html()).to.eq('navbar');
+      expect(template.find('h1').find('a').html()).to.eq('rdx-header');
     });
 
   });
