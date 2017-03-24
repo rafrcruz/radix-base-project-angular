@@ -1,16 +1,16 @@
-import ExamplesSideNavBarModule from './examplesSideNavBar'
-import ExamplesSideNavBarController from './examplesSideNavBar.controller';
-import ExamplesSideNavBarComponent from './examplesSideNavBar.component';
-import ExamplesSideNavBarTemplate from './examplesSideNavBar.html';
+import RdxSidebarModule from './rdxSidebar'
+import RdxSidebarController from './rdxSidebar.controller';
+import RdxSidebarComponent from './rdxSidebar.component';
+import RdxSidebarTemplate from './rdxSidebar.html';
 
-describe('ExamplesSideNavBar', () => {
+describe('RdxSidebar', () => {
   let $rootScope, makeController;
 
-  beforeEach(window.module(ExamplesSideNavBarModule));
+  beforeEach(window.module(RdxSidebarModule));
   beforeEach(inject((_$rootScope_) => {
     $rootScope = _$rootScope_;
     makeController = () => {
-      return new ExamplesSideNavBarController();
+      return new RdxSidebarController();
     };
   }));
 
@@ -30,20 +30,20 @@ describe('ExamplesSideNavBar', () => {
     // template specs
     // tip: use regex to ensure correct bindings are used e.g., {{  }}
     it('has name in template [REMOVE]', () => {
-      expect(ExamplesSideNavBarTemplate).to.match(/{{\s?\$ctrl\.name\s?}}/g);
+      expect(RdxSidebarTemplate).to.match(/{{\s?\$ctrl\.name\s?}}/g);
     });
   });
 
   describe('Component', () => {
       // component/directive specs
-      let component = ExamplesSideNavBarComponent;
+      let component = RdxSidebarComponent;
 
       it('includes the intended template',() => {
-        expect(component.template).to.equal(ExamplesSideNavBarTemplate);
+        expect(component.template).to.equal(RdxSidebarTemplate);
       });
 
       it('invokes the right controller', () => {
-        expect(component.controller).to.equal(ExamplesSideNavBarController);
+        expect(component.controller).to.equal(RdxSidebarController);
       });
   });
 });

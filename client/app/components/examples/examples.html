@@ -1,4 +1,13 @@
 <section layout="row" flex>
-  <examples-side-nav-bar></examples-side-nav-bar>
+  <rdx-sidebar title="Exemplos" start-open="true">
+    <md-list ng-cloak>
+      <md-list-item>
+        <md-button class="sidenav-link"><a ui-sref="examples.filterBox">filterBox</a></md-button>
+      </md-list-item>
+      <md-list-item>
+        <md-button class="sidenav-link"><a ui-sref="examples.dialogs">dialogs</a></md-button>
+      </md-list-item>
+    </md-list>
+  </rdx-sidebar>
   <div ui-view></div>
 </section>
