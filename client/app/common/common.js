@@ -1,9 +1,13 @@
 import angular from 'angular';
-import Navbar from './navbar/navbar';
+import RdxHeader from './rdxHeader/rdxHeader';
+import RdxSidebar from'./rdxSidebar/rdxSidebar';
 import User from './user/user';
 
+
+
 let commonModule = angular.module('app.common', [
-  Navbar,
+  RdxHeader,
+  RdxSidebar,
   User
 ])
 

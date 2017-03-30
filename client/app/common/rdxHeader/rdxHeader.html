@@ -1,0 +1,15 @@
+<md-content flex role="navigation" class="_md flex" layout="row" layout-align="start center">
+  <header class="nav-header">
+    <a ng-href="/" class="docs-logo" href="/">
+      <img ng-if="$ctrl.logo == 'radix'" src="./../../content/images/radix-logo-completo.png" alt>
+      <img ng-if="$ctrl.logo == 'vale'" src="./../../content/images/vale-logo.png" alt>
+    </a>
+  </header>
+  <md-content layout="column" layout-align="start start">
+    <div>
+      <h1 class="projectTitle"> {{$ctrl.title}} </h1>
+    </div>
+    <div ng-transclude>
+    </div>
+  </md-content>
+</md-content>
